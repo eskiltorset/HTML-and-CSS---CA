@@ -1,11 +1,16 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
 .body {
     margin: 0;
+    height: 100%;
 }
 
 .header {
     position: relative;
     background-color: white;
-    border-bottom: 1px solid black; 
+    border-bottom: 2px solid #0A3641;; 
     height: 120px;
     width: 100%;
 }
@@ -35,6 +40,7 @@
     text-decoration: none;
     font-size: 30px;
     border-radius: 4px;
+    color: #0A3641;
 }
   
   .header-left a:hover {
@@ -53,23 +59,65 @@
 }
 
 .left-content {
+    height: 505px;
     width: 50%;
-    height: 100vh;
-    border: 5px solid black;
+    background-color: black; 
 }
 
-.men-image{
-    object-fit: cover;    
+.left-content img {
+    width: 813px;
+    height: 1219px;
+    max-height:100%; 
+    max-width:100%;
+    object-position: bottom;
+    object-fit: cover;  
+    opacity: 0.3; 
+}
+
+.left-content button {
+    position: relative;
+    bottom: 290px;
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    width: 250px;
+    border: 3px solid #0A3641;
+    background-color: white;
+    color: #0A3641;
+    font-size: 2rem;
 }
 
 .right-content {
+    height: 505px;
     width: 50%;
-    height: 100vh;
-    border: 5px solid black;
+    background-color: black; 
 }
 
-.women-image{
-    object-fit: cover;    
+.right-content img{
+    width: 1376px;
+    height: 917px;
+    max-height:100%; 
+    max-width:100%;
+    object-position: right bottom;
+    object-fit: cover;   
+    opacity: 0.3;  
+}
+
+.right-content button {
+  position: relative;
+  bottom: 290px;
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: 250px;
+  border: 3px solid #0A3641;
+  background-color: white;
+  color: #0A3641;
+  font-size: 2rem;
+}
+
+.all-content a {
+  text-decoration: none;
 }
   
   @media screen and (max-width: 500px) {
