@@ -44,7 +44,7 @@
 }
   
   .header-left a:hover {
-    color: gray;
+    color: #255967;
   }
   
   .header a.active {
@@ -87,6 +87,11 @@
     font-size: 2rem;
 }
 
+.left-content button:hover {
+  background-color: rgba(255, 255, 255, 0.872);
+  cursor: pointer;
+}
+
 .right-content {
     height: 505px;
     width: 50%;
@@ -116,7 +121,67 @@
   font-size: 2rem;
 }
 
+.right-content button:hover {
+  background-color: rgba(255, 255, 255, 0.872);
+  cursor: pointer;
+}
+
 .all-content a {
+  text-decoration: none;
+}
+
+.category {
+  height: 40px;
+  width: 100%;
+  border-bottom: 2px solid #0A3641;
+  text-decoration: none;
+  text-align: center;
+}
+
+.category button {
+  width: 100px;
+  height: 100%;
+  background-color: white;
+  border: none;
+  font-size: 1.2rem;;
+}
+
+.category button:hover {
+  background-color: #0A3641;
+  color: white;
+  cursor: pointer;
+}
+
+.men-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.men-content div {
+  width: 24%;
+  box-sizing: border-box;
+  height: 380px;
+  background-color: #F6F6F6;
+  margin: 0.5%;
+  margin-top: 10px;
+}
+
+.men-content div img{
+  height: 250px;
+  background-color: #F6F6F6;
+  margin-top: 10px;
+}
+
+.men-content div h3, h4, p {
+  margin: 10px;
+}
+
+.men-content div h4 {
+  color: #D10000;
+  font-size: 1.2rem;
+}
+
+.men-content a {
   text-decoration: none;
 }
   
