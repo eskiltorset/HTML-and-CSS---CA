@@ -143,7 +143,7 @@
   height: 100%;
   background-color: white;
   border: none;
-  font-size: 1.2rem;;
+  font-size: 1.2rem;
 }
 
 .category button:hover {
@@ -183,6 +183,110 @@
 
 .men-content a {
   text-decoration: none;
+}
+
+.page-header {
+  height: 30px;
+  width: 100%;
+  border-bottom: 2px solid #0A3641;
+  text-align: center;
+}
+
+.page-header p {
+  height: 100%;
+  color: #0A3641;
+  font-size: 1.2rem;
+}
+
+.all-content-product {
+  display: flex;
+  flex-direction: row;
+}
+
+.all-content-product div {
+  width: 50%;
+  height: 100vh;
+}
+
+.left-content-product img {
+  height: 90%;
+  position: relative;
+  background-color: #F6F6F6;
+  top: 5%;
+}
+
+.right-content-product h3, h4, p {
+  position: relative;
+  top: 3%;
+  color:#0A3641;
+}
+
+.right-content-product h4 {
+  font-size: 1.8rem;
+}
+
+.right-content-product .price {
+  font-size: 1.8rem;
+  color: #D10000;
+}
+
+.right-content-product .product-description {
+  font-size: 1.2rem;
+  width: 70%;
+  margin-top: 5%;
+}
+
+/*hide the inputs/checkmarks and submenu*/
+input, ul.submenu {
+  display: none;
+  text-align: center;
+  list-style: none;
+}
+
+label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  width: 450px;
+  border: 2px solid #0A3641;
+  top: 10%;
+  left: 10px;
+  padding: 12px;
+  color: #0A3641;
+  font-size: 1rem;
+}
+
+/*show the submenu when input is checked*/
+input:checked~ul.submenu {
+  display: block;
+  border: 2px solid #0A3641;
+  width: 434px;
+  background-color: #F6F6F6;
+  margin-left: 10px;
+  margin-top: 63px;
+}
+
+li a {
+  text-decoration: none;
+  color: #0A3641;
+  padding-top: 10px;
+}
+
+li {
+  width: 400px;
+  padding: 10px;
+}
+
+.add-to-cart-btn {
+  width: 480px;
+  margin-left: 10px;
+  padding: 12px;
+  background-color: #0A3641;
+  color: white;
+  top: 15%;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
   
   @media screen and (max-width: 500px) {
