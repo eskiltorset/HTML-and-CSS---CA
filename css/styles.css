@@ -236,7 +236,6 @@
   margin-top: 5%;
 }
 
-/*hide the inputs/checkmarks and submenu*/
 input, ul.submenu {
   display: none;
   text-align: center;
@@ -256,7 +255,6 @@ label {
   font-size: 1rem;
 }
 
-/*show the submenu when input is checked*/
 input:checked~ul.submenu {
   display: block;
   border: 2px solid #0A3641;
@@ -285,6 +283,118 @@ li {
   color: white;
   top: 15%;
   position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.all-content-checkout {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content-checkout {
+  width: 60%;
+  height: 300px;
+  background-color: #F6F6F6;
+  margin: 30px;
+}
+
+.right-content-checkout {
+  background-color: #F6F6F6;
+  height: 300px;
+  margin: 30px;
+  width: 40%;
+}
+
+.left-content-checkout img {
+  height: 90%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+
+.left-content-checkout div {
+  position: relative;
+  top: 5%;
+  float: right;
+  width: 400px;
+}
+
+.left-content-checkout .price {
+  color: #D10000;
+  font-size: 1.2rem;
+  margin-top: 60px;
+}
+
+.left-content-checkout .product-name {
+  font-size: 1.2rem;
+}
+
+.sum-header {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.right-content-checkout p {
+  font-size: 1.3rem;
+}
+
+.right-content-checkout .left {
+  float: left;
+  margin-left: 10px;
+}
+
+.right-content-checkout .right {
+  float: right;
+  margin-right: 10px;
+}
+
+.checkout-btn {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 12px;
+  background-color: #0A3641;
+  color: white;
+  top: 6%;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.top-content {
+  height: 200px;
+  background-color: #0A3641;
+}
+
+.top-content img {
+  height: 150px;
+  filter: brightness(0) invert(1);
+  position: relative;
+  top: 25px;
+}
+
+.bottom-content {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.bottom-content h2{
+  font-size: 1.8rem;
+}
+
+.bottom-content p{
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.continue-shopping-btn {
+  width: 30%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #0A3641;
+  color: white;
+  
   font-size: 1.2rem;
   cursor: pointer;
 }
