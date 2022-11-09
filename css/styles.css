@@ -450,8 +450,6 @@ li {
   font-size: 1.5rem;
 }
 
-/**/
-
 .all-content-contact {
   display: flex;
   flex-direction: row;
@@ -478,7 +476,7 @@ li {
 }
 
 .right-content-contact p {
-  margin: 15%;
+  margin: 10%;
   text-align: center;
   padding: 20px;
   letter-spacing: 2px;
