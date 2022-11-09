@@ -399,13 +399,9 @@ li {
   cursor: pointer;
 }
   
-  @media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .header-left {
-      float: none;
+  @media screen and (max-width: 600px) {
+
+    .men-content {
+      flex-direction: column;
     }
   }
