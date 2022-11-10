@@ -56,27 +56,27 @@
 .all-content {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .left-content {
-    height: 505px;
+    height: 100vh;
     width: 50%;
     background-color: black; 
 }
 
 .left-content img {
-    width: 813px;
-    height: 1219px;
     max-height:100%; 
-    max-width:100%;
+    min-width:100%;
     object-position: bottom;
     object-fit: cover;  
     opacity: 0.3; 
 }
 
 .left-content button {
-    position: relative;
-    bottom: 290px;
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
     display: block;
     margin: 0 auto;
     height: 80px;
@@ -93,15 +93,13 @@
 }
 
 .right-content {
-    height: 505px;
+    height: 100vh;
     width: 50%;
     background-color: black; 
 }
 
 .right-content img{
-    width: 1376px;
-    height: 917px;
-    max-height:100%; 
+    min-height:100%; 
     max-width:100%;
     object-position: right bottom;
     object-fit: cover;   
@@ -109,10 +107,10 @@
 }
 
 .right-content button {
-  position: relative;
-  bottom: 290px;
+  position: absolute;
+  bottom: 45%;
+  left: 65%;
   display: block;
-  margin: 0 auto;
   height: 80px;
   width: 250px;
   border: 3px solid #0A3641;
@@ -173,12 +171,14 @@
 }
 
 .men-content div h3, h4, p {
-  margin: 10px;
+  margin: 5px;
+  margin-left: 10px;
 }
 
 .men-content div h4 {
   color: #D10000;
   font-size: 1.2rem;
+  margin-top: 20px;
 }
 
 .men-content a {
@@ -412,7 +412,7 @@ li {
 
 .left-content-about-us img {
   max-height:100%; 
-  min-width:100%;
+  max-width:100%;
   opacity: 0.3;
   object-fit: cover;
 }
