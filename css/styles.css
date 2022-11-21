@@ -74,7 +74,7 @@ header img {
     opacity: 0.3; 
 }
 
-.left-content button {
+.left-content a {
     position: absolute;
     bottom: 45%;
     left: 30%;
@@ -86,9 +86,10 @@ header img {
     background-color: white;
     color: #0A3641;
     font-size: 2rem;
+    text-align: center;
 }
 
-.left-content button:hover {
+.left-content a:hover {
   background-color: rgba(255, 255, 255, 0.872);
   cursor: pointer;
 }
@@ -108,7 +109,7 @@ header img {
     opacity: 0.3;  
 }
 
-.right-content button {
+.right-content a {
   position: absolute;
   bottom: 45%;
   left: 30%;
@@ -119,9 +120,10 @@ header img {
   background-color: white;
   color: #0A3641;
   font-size: 2rem;
+  text-align: center;
 }
 
-.right-content button:hover {
+.right-content a:hover {
   background-color: rgba(255, 255, 255, 0.872);
   cursor: pointer;
 }
@@ -138,15 +140,18 @@ header img {
   text-align: center;
 }
 
-.category button {
+.category a {
+  display: inline-block;
   width: 100px;
   height: 100%;
   background-color: white;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #0A3641;
 }
 
-.category button:hover {
+.category a:hover {
   background-color: #0A3641;
   color: white;
   cursor: pointer;
@@ -172,9 +177,13 @@ header img {
   margin-top: 10px;
 }
 
-.men-content div h3, h4, p {
+.men-content div h4, p, h1 {
   margin: 5px;
   margin-left: 10px;
+}
+
+.men-content div h1 {
+  font-size: 1.4rem;
 }
 
 .men-content div h4 {
@@ -217,13 +226,13 @@ header img {
   top: 5%;
 }
 
-.right-content-product h3, h4, p {
+.right-content-product h3, h4, p, h1 {
   position: relative;
   top: 3%;
   color:#0A3641;
 }
 
-.right-content-product h4 {
+.right-content-product h1 {
   font-size: 1.8rem;
 }
 
@@ -247,8 +256,13 @@ select {
   top: 10%;
 }
 
+a {
+  text-align: center;
+}
+
 .add-to-cart-btn {
-  width: 480px;
+  display: inline-block;
+  width: 460px;
   margin-left: 10px;
   padding: 12px;
   background-color: #0A3641;
@@ -257,6 +271,7 @@ select {
   position: relative;
   font-size: 1.2rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .all-content-checkout {
@@ -322,7 +337,8 @@ select {
 }
 
 .checkout-btn {
-  width: 90%;
+  display: inline-block;
+  width: 85%;
   margin-left: 5%;
   margin-right: 5%;
   padding: 12px;
@@ -332,6 +348,7 @@ select {
   position: relative;
   font-size: 1.2rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .top-content {
@@ -351,8 +368,9 @@ select {
   margin-top: 40px;
 }
 
-.bottom-content h2{
+.bottom-content h1{
   font-size: 1.8rem;
+  color: #0A3641;
 }
 
 .bottom-content p{
@@ -361,6 +379,8 @@ select {
 }
 
 .continue-shopping-btn {
+  display: inline-block;
+  text-decoration: none;
   width: 30%;
   padding: 12px;
   margin-top: 20px;
@@ -493,7 +513,7 @@ h1.media-header {
       text-align: center;
     }
 
-    .left-content button, .right-content button{
+    .left-content a, .right-content a{
       position: absolute;
       left: 15%;
       top: 35%;
@@ -529,13 +549,9 @@ h1.media-header {
       max-height: 55%;
     }
 
-    .men-content div h3 {
-      font-size: 1rem;
+    .men-content div h1 {
+      font-size: 1.2rem;
     }
-
-    
-
-    
     
     .all-content-completed .top-content {
       background-color: white;
@@ -733,14 +749,14 @@ h1.media-header {
       max-height: 100%;
     }
 
-    .right-content-product h3, h4, p {
+    .right-content-product h3, h4, p, h1 {
       position: relative;
       top: 0;
       color:#0A3641;
       width: 100%;
     }
     
-    .right-content-product h4 {
+    .right-content-product h1 {
       font-size: 1.8rem;
     }
     
