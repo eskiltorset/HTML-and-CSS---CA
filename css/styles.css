@@ -52,7 +52,22 @@ header img {
     background-color: dodgerblue;
     color: white;
 }
-  
+
+#bag-icon {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: 0px;
+}
+
+#bag-icon-header {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  float: right;
+  right: 30px;
+  top: 50px;
+}
 
 .all-content {
     display: flex;
@@ -190,6 +205,7 @@ header img {
   color: #D10000;
   font-size: 1.2rem;
   margin-top: 20px;
+  float: right;
 }
 
 .men-content a {
@@ -495,6 +511,113 @@ h1.media-header {
   display: none;
 }
 
+/* CART */
+.cart {
+  /*height: 100%;
+  width: 96%;
+  border: 1px solid black;
+  margin: 2%;
+  padding: 20px;*/
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin-top: 100px;
+} 
+
+#hidden {
+  visibility: hidden;
+}
+
+/* cart header */
+.cart-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+/* cart items */
+.cart-items {
+  max-height: calc(100vh - 247px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* cart item */
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+.cart-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* item info */
+.cart-item .item-info {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.6);
+
+  border-radius: 0 10px 10px 0;
+
+  padding: 10px;
+}
+.cart-item .item-info:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+  cursor: pointer;
+}
+.cart-item .item-info img {
+  width: 75px;
+}
+/* unit price */
+.cart-item .unit-price {
+  flex: 1;
+  font-size: 1.2rem;
+}
+/* units */
+.cart-item .units {
+  flex: 1;
+}
+.cart-item .units .number {
+  margin: 0 10px;
+
+  font-size: 1.2rem;
+}
+.cart-item .units .btn {
+  width: 20px;
+  height: 20px;
+
+  background-color: rgb(242, 255, 58);
+
+  border-radius: 50%;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+/* cart footer */
+.cart-footer {
+  width: 100%;
+  background-color: rgb(255, 21, 21);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid rgb(var(--right-side-bg-color));
+}
+.cart-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 1.3rem;
+}
+.cart-footer .subtotal {
+  background-color: white;
+}
+.cart-footer .checkout {
+  background-color: rgb(242, 255, 58);
+
+  cursor: pointer;
+}
   
   @media screen and (max-width: 600px) {
 

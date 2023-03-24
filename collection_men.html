@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rainydays | Collection Men</title>
 
-    <!-- Hotjar Tracking Code for https://darling-haupia-7462bb.netlify.app -->
+    <!-- Hotjar Tracking Code for https://darling-haupia-7462bb.netlify.app 
     <script>
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -21,13 +21,17 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
+    </script>-->
 </head>
 <body>
     <header>
         <div class="header-left">
           <a href="about.html">ABOUT US</a>
           <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="header-right">
+            <a href="cart.html"><img src="images/bag-plus.png" alt="add to cart" id="bag-icon-header"></a>
         </div>
 
         <a href="index.html"><img src="images/RainyDays_Logo.png" alt="Rainydays Logo" class="center"></a>
@@ -55,48 +59,29 @@
     </div>
 
     <main class="men-content">
-        <div class="product1">
-            <a href="product_info.html"><img src="images/Image4.jpg" alt="Jacket 1" class="center"></a>
-            <h1>1st V2 Alpine Jacket</h1>
-            <p>Gray/Orange</p>
-            <h4>1999,-</h4>
+        
+    </main>
+
+    <div class="cart" id="hidden">
+        <div class="cart-header">
+            <div class="column1">Item</div>
+            <div class="column2">Unit price</div>
+            <div class="column3">Units</div>
         </div>
-        <div class="product2">
-            <img src="images/Image00001.jpg" alt="Jacket 2" class="center">
-            <h1>Softshell Jacket</h1>
-            <p>Gray</p>
-            <h4>899,-</h4>
+        <div class="cart-items">
+            <!-- render cart items here -->
         </div>
-        <div class="product3">
-            <img src="images/Image6.jpg" alt="Jacket 3" class="center">
-            <h1>Skiing Jacket</h1>
-            <p>Red/Black</p>
-            <h4>799,-</h4>
+        <div class="cart-footer">
+            <div class="subtotal">
+                Subtotal (0 items): $0
+            </div>
+            <a href="checkout.html"><div class="checkout">
+                Proceed to checkout
+            </div></a>
         </div>
-        <div class="product4">
-            <img src="images/Image9.jpg" alt="Jacket 4" class="center">
-            <h1>Motorcycle Jacket</h1>
-            <p>Gray</p>
-            <h4>1399,-</h4>
-        </div>
-        <div class="product5">
-            <img src="images/Image8.jpg" alt="Jacket 5" class="center">
-            <h1>Hiking Jacket</h1>
-            <p>Gray</p>
-            <h4>1299,-</h4>
-        </div>
-        <div class="product6">
-            <img src="images/Image7.jpg" alt="Jacket 6" class="center">
-            <h1>Mountain Jacket V2</h1>
-            <p>Black/White</p>
-            <h4>1799,-</h4>
-        </div>
-        <div class="product7">
-            <img src="images/Image00002.jpg" alt="Jacket 7" class="center">
-            <h1>Fleece Jacket</h1>
-            <p>Green</p>
-            <h4>849,-</h4>
-        </div>
-        </main>
+    </div>
+
+    <script src="/script/products.js"></script>
+    <script src="/script/app.js"></script>
 </body>
 </html>

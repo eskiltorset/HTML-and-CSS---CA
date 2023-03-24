@@ -6,11 +6,10 @@
 <link href="css/styles.css" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="The Product Info page of my RainyDays website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="The Order Completed page of my RainyDays website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainydays | Product Info</title>
-
-    <script src="/script/product-info.js"></script>
+    <title>Rainydays | Order Completed</title>
 
     <!-- Hotjar Tracking Code for https://darling-haupia-7462bb.netlify.app -->
     <script>
@@ -24,8 +23,7 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 </head>
-<body onload="getValues()">
-    
+<body>
     <header>
         <div class="header-left">
           <a href="about.html">ABOUT US</a>
@@ -51,31 +49,33 @@
 
     </header>
 
-    <div class="page-header">
-        <p>PRODUCT INFO</p>
-    </div>
+    <main class="all-content-completed">
 
-    <main class="all-content-product">
-        <div class="left-content-product">
-            <!--<img src="images/Image4.jpg" alt="Jacket 1" class="center">-->
+        <div class="page-header">
+            <p>YOUR SHOPPING CART</p>
         </div>
-        <div class="right-content-product">
-            <!--<h1>1st V2 Alpine Jacket</h1>
-            <p>Gray/Orange</p>
-            <h4 class="price">1999,-</h4>
-            <p class="product-description">Perfect for cold weather. Thick material ensures a warm body no matter 
-                the conditions. Popular for expeditions.</p>-->
-
-            <select name="choice">
-                <option value="header">Choose Size</option>
-                <option value="first">Small</option>
-                <option value="second">Medium</option>
-                <option value="third">Large</option>
-                <option value="fourth">X-Large</option>
-              </select>
-
-            <a href="checkout.html" class="add-to-cart-btn">ADD TO CART</a>
+        
+        <div class="cart">
+            <div class="cart-header">
+                <div class="column1">Item</div>
+                <div class="column2">Unit price</div>
+                <div class="column3">Units</div>
+            </div>
+            <div class="cart-items">
+                <!-- render cart items here -->
+            </div>
+            <div class="cart-footer">
+                <div class="subtotal">
+                    Subtotal (0 items): $0
+                </div>
+                <a href="checkout.html"><div class="checkout">
+                    Proceed to checkout
+                </div></a>
+            </div>
         </div>
-    </main>  
+    </main>
+
+    <script src="/script/products.js"></script>
+    <script src="/script/app2.js"></script>
 </body>
 </html>
