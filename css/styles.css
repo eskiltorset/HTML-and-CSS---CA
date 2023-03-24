@@ -513,19 +513,16 @@ h1.media-header {
 
 /* CART */
 .cart {
-  /*height: 100%;
-  width: 96%;
-  border: 1px solid black;
-  margin: 2%;
-  padding: 20px;*/
+  border: 2px solid #0A3641;
+  padding: 20px;
   height: 100%;
-  width: 100%;
+  width: 96.5%;
   position: relative;
-  margin-top: 100px;
+  margin-top: 10px;
 } 
 
 #hidden {
-  visibility: hidden;
+  display: none;
 }
 
 /* cart header */
@@ -533,6 +530,7 @@ h1.media-header {
   display: flex;
   justify-content: space-around;
   padding: 10px 0;
+  border-bottom: 2px solid #0A3641;
 }
 /* cart items */
 .cart-items {
@@ -584,24 +582,21 @@ h1.media-header {
 .cart-item .units .btn {
   width: 20px;
   height: 20px;
-
-  background-color: rgb(242, 255, 58);
-
+  background-color: #0A3641;
   border-radius: 50%;
-
   font-weight: bold;
-
   cursor: pointer;
+  color: white;
 }
 
 /* cart footer */
 .cart-footer {
   width: 100%;
   background-color: rgb(255, 21, 21);
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
-  border-left: 1px solid rgb(var(--right-side-bg-color));
+  border-top: 2px solid #0A3641;
 }
 .cart-footer div {
   display: flex;
@@ -614,9 +609,13 @@ h1.media-header {
   background-color: white;
 }
 .cart-footer .checkout {
-  background-color: rgb(242, 255, 58);
-
+  background-color: #0A3641;
+  color: white;
   cursor: pointer;
+}
+
+.cart-footer a{
+  text-decoration: none;
 }
   
   @media screen and (max-width: 600px) {
