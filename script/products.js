@@ -1,7 +1,7 @@
 const products = [
     {
       id: 0,
-      name: "1st V2 Alpine Jacket",
+      name: "Alpine Jacket",
       color: "Gray/Orange",
       price: 1999,
       description:
@@ -47,7 +47,7 @@ const products = [
     },
     {
       id: 5,
-      name: "Mountain Jacket V2",
+      name: "Mountain Jacket",
       color: "Black/White",
       price: 1799,
       description:

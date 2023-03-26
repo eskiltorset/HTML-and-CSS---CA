@@ -58,6 +58,8 @@ header img {
   height: 32px;
   position: relative;
   top: 0px;
+  left: 5px;
+  cursor: pointer;
 }
 
 #bag-icon-header {
@@ -511,7 +513,7 @@ h1.media-header {
   display: none;
 }
 
-/* CART */
+/* cart */
 .cart {
   border: 2px solid #0A3641;
   padding: 20px;
@@ -537,6 +539,8 @@ h1.media-header {
   max-height: calc(100vh - 247px);
   overflow-y: auto;
   overflow-x: hidden;
+  margin-bottom: 120px;
+
 }
 /* cart item */
 .cart-item {
@@ -945,4 +949,15 @@ h1.media-header {
       margin-top: 20%;
     }
 
+    #bag-icon {
+      float: right;
+      top: -40px;
+      left: -5px;
+    }
+
+    .product h4 {
+      left: 15px;
+    }
+
   }
+

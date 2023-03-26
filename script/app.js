@@ -3,8 +3,6 @@ const productsElement = document.querySelector(".men-content");
 const cartItemsElement = document.querySelector(".cart-items");
 const subtotalElement = document.querySelector(".subtotal");
 
-
-
 // RENDER PRODUCTS
 function renderProducts() {
   products.forEach((product) => {
@@ -14,9 +12,9 @@ function renderProducts() {
                     <h1>${product.name}</h1>
                     <p>${product.color}</p>
                     <h4>${product.price},-  </h4>
-                    <div class="add-to-cart" onclick="addToCart(${product.id})">
+                    <cart class="add-to-cart" onclick="addToCart(${product.id})">
                         <img src="images/bag-plus.png" alt="add to cart" id="bag-icon"/>
-                    </div>
+                    </cart>
                 </div>
         `;
   })
@@ -28,8 +26,12 @@ let cart = JSON.parse(localStorage.getItem("cart"));
 updateCart();
 
 function addToCart(id) {
+
+  alert("item added to cart!");
+
   if (cart.some((item) => item.id === id)) {
     changeNumberOfUnits("plus", id);
+    
   }
   else {
     const item = products.find((product) => product.id === id);

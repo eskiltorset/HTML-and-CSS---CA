@@ -56,7 +56,7 @@ function addToCart(id) {
                         <h4>${item.name}</h4>
                     </div>
                     <div class="unit-price">
-                        ${item.price},-
+                        ${item.price},- 
                     </div>
                     <div class="units">
                         <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
