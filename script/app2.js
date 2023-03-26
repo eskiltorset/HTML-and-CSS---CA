@@ -3,7 +3,7 @@ const cartItemsElement = document.querySelector(".cart-items");
 const subtotalElement = document.querySelector(".subtotal");
 
 //cart array
-let cart = JSON.parse(localStorage.getItem("cart"));
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 updateCart();
 
 function addToCart(id) {

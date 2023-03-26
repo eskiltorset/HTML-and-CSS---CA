@@ -22,7 +22,7 @@ function renderProducts() {
 renderProducts();
 
 //cart array
-let cart = JSON.parse(localStorage.getItem("cart"));
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 updateCart();
 
 function addToCart(id) {
